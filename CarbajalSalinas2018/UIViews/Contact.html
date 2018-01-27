@@ -1,0 +1,76 @@
+﻿<div class="wrapsemibox" ng-controller="ContactController as contactCtrl">
+    <div class="semiboxshadow text-center">
+        <img ng-src="{{carbCtrl.rootDir}}/Content/Calypso/shp.png" class="img-responsive" alt="shp">
+    </div>
+    <!-- CONTACT
+    ================================================== -->
+    <div id="mapWrapper" style="width:100%;height:270px;border: 0;margin-top:-40px;z-index: 11;position: relative;">
+        <div id="map_canvas">
+            <ng-map center="[40.2595595,-74.8128208]"></ng-map>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8 animated fadeInLeft notransition">
+                <h1 class="smalltitle">
+                    <span>{{contactCtrl.getText}}</span>
+                </h1>
+                <div class="done">
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        {{contactCtrl.messageText}}
+                    </div>
+                </div>
+                <form name="contact_form1" id="contact_form1" ng-model="contactCtrl.contactForm1" novalidate ="" ng-submit="contactCtrl.submitContact()">
+                    <div class="form">
+                        <input class="col-md-6" type="text" ng-required="true" name="contact_name1" id="contact_name1" ng-model="contactCtrl.contactForm1.contact_name1" placeholder="Name">
+                        <input class="col-md-6" type="text" ng-required="true" name="contact_email1" id="contact_email1" ng-model="contactCtrl.contactForm1.contact_email1" placeholder="E-mail">
+                        <textarea class="col-md-12" ng-required="true" name="contact_message1" rows="7" id="contact_message1" ng-model="contactCtrl.contactForm1.contact_message1" placeholder="Message"></textarea><br />
+                        <input type="submit" id="submit" class="btn" value="Send">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 animated fadeInRight notransition">
+                <h1 class="smalltitle">
+                    <span>{{contactCtrl.contactText}}</span>
+                </h1>
+                <p>
+                    {{contactCtrl.ifText}}
+                </p>
+                <h4 class="font100">{{contactCtrl.officeText}}</h4>
+                <ul class="unstyled">
+                    <li><span style="margin-right:5px;"><i class="icon-map-marker"></i></span>{{contactCtrl.addressText}}</li>
+                    <li><span style="margin-right:3px;"><i class="icon-phone"></i></span>{{contactCtrl.phoneText}}</li>
+                    <li><span style="margin-right:2px;"><i class="icon-envelope"></i></span>{{contactCtrl.emailText}}<a href="mailto:jose.carbajal.salinas@gmail.com"></a></li>
+                </ul>
+                <h4 class="font100">{{contactCtrl.businessText}}</h4>
+                <ul class="unstyled">
+                    <li><i class="icon-time"></i>{{contactCtrl.mondayText}}</li>
+                    <li><i class="icon-time"></i>{{contactCtrl.saturdayText}}</li>
+                    <li><i class="icon-time"></i>{{contactCtrl.sundayText}}</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--CALL TO ACTION PANEL
+    ================================================== -->
+    <section class="container animated fadeInDownNow notransition topspace40">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <p class="bigtext">
+                        {{contactCtrl.visitText}} <span class="fontpacifico colortext">{{contactCtrl.carbajalText}}</span> {{contactCtrl.anyText}}
+                    </p>
+                    <p>
+                        {{contactCtrl.takeText}}
+                    </p>
+                </div>
+                <div class="text-center topspace20">
+                    <a href="#" class="buttonblack"><i class="icon-shopping-cart"></i>{{contactCtrl.buyText}}</a>
+                    <a href="#" class="buttoncolor"><i class="icon-link"></i>{{contactCtrl.learnText}}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /. end call to action-->
+</div>

@@ -1,0 +1,40 @@
+﻿<div ng-controller="PostSummaryController as postSummaryCtrl">
+    <div style="padding-top:25px;">
+        <div class="row">
+            <div ng-repeat="post in postSummaryCtrl.postArray" class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img style="height:250px; width:100%"ng-src="{{post.imageSrc}}" alt="{{post.placeHolder}}">
+                    <div class="caption" style="height:300px">
+                        <h3 ng-show="postSummaryCtrl.language =='Spanish'">"{{post.spanishTitle}}"</h3>
+                        <h3 ng-show="postSummaryCtrl.language =='English'">"{{post.englishTitle}}"</h3>
+                        <p ng-show="postSummaryCtrl.language =='Spanish'" style="max-height:100px; overflow-y:auto; height:250px;">{{post.spanishDesc}}</p>
+                        <p ng-show="postSummaryCtrl.language =='English'" style="max-height:100px; overflow-y:auto; height:250px;">{{post.englishDesc}}</p>
+                        <p style="margin-bottom:20px;"><a id="{{post.link}}" ng-click="postSummaryCtrl.readMoreClick($event)" class="btn btn-primary" role="button">{{postSummaryCtrl.readText}}</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="pager"class="row">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a aria-label="Previous" ng-click="postSummaryCtrl.pageCliked($event,'Previous')">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li ng-repeat="page in postSummaryCtrl.pages" id="page{{page}}"><a ng-click="postSummaryCtrl.pageCliked($event, page)">{{page}}</a></li>
+                    <li>
+                        <a aria-label="Next" ng-click="postSummaryCtrl.pageCliked($event,'Next')">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div style="float:right;margin-right:15px;">
+                <span>{{postSummaryCtrl.fromPager}}-{{postSummaryCtrl.toPager}} of {{postSummaryCtrl.totalNumberPosts}}</span>
+
+            </div>
+        </div>
+    </div>
+</div>

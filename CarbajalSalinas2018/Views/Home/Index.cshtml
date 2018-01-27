@@ -1,0 +1,353 @@
+﻿  <!-- /.wrapbox start-->
+<div ng-controller="IndexController as ctrl" ng-jq>
+    <div class="wrapbox">
+        <!-- TOP AREA
+        ================================================== -->
+        <section class="toparea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 top-text pull-left animated fadeInLeft">
+                        <i class="icon-phone"></i>{{ctrl.phone}}<span class="separator"></span><i class="icon-envelope"></i>{{ctrl.email}}<a ng-click="ctrl.sendEmail($event)">{{ctrl.emailId}}</a>
+                    </div>
+                    <div class="col-md-4 text-right animated fadeInRight">
+                        <div class="social-icons">
+                            <a class="icon icon-facebook" target="_blank" href="https://www.facebook.com/carbajalsalinasinc/"></a>
+                            <a class="icon icon-twitter" target="_blank" href="https://twitter.com/CarbajalSalinas"></a>
+                            <a class="icon icon-linkedin" target="_blank" href="https://www.linkedin.com/in/josecarbajal"></a>
+                            <a class="icon icon-youtube" target="_blank" href="https://www.youtube.com/channel/UCIbizkIuDuoEwYg61-RNUow"></a>
+                            <a class="icon icon-google-plus" target="_blank" href="https://plus.google.com/116342826277857091177/posts"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-right animated fadeInRight">
+                        <a lang="en" class="English" ng-click="ctrl.changeLanguage($event, 'English')">{{ctrl.languageOption1}}</a><span class="separator"></span><a lang="es" class="Spanish" ng-click="ctrl.changeLanguage($event, 'Spanish')">Spanish</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.toparea end-->
+        <!-- NAV
+        ================================================== -->
+        <nav class="navbar navbar-fixed-top wowmenu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand logo-nav" ng-click="ctrl.redirect($event,'home')" id="logo"><img src="~/Content/Calypso/logo.png" alt="logo"></a>
+                </div>
+                <ul class="nav nav-tabs pull-right">
+                    <li ng-click="ctrl.redirect($event,'home')" id="home"><a ng-click="ctrl.redirect($event,'home')">{{ctrl.homeMenu}}</a></li>
+
+                    <li ng-click="ctrl.redirect($event,'postSummary')" id="postSummary"><a ng-click="ctrl.redirect($event,'postSummary')">{{ctrl.postsMenu}}</a></li>
+                    <li ng-click="ctrl.redirect($event,'contact')" id="contact"><a id="contact" ng-click="ctrl.redirect($event,'contact')">{{ctrl.contactMenu}}</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /nav end-->
+        <div id="contentChanging">
+            <!-- CAROUSEL
+            ================================================== -->
+            <section class="carousel carousel-fade slide home-slider" id="c-slide" data-ride="carousel" data-interval="4500" data-pause="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#c-slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#c-slide" data-slide-to="1" class=""></li>
+                    <li data-target="#c-slide" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active bgImage">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 fadein scaleInv anim_1">
+                                    <div class="fadein scaleInv anim_2">
+                                        <h1 class="carouselText1 animated fadeInUpBig">{{ctrl.headerTitle1}}<span class="colortext">{{ctrl.domainName}}</span></h1>
+                                    </div>
+                                    <div class="fadein scaleInv anim_1">
+                                        <p class="carouselText2 animated fadeInLeft">
+                                            {{ctrl.description1}}
+                                        </p>
+                                    </div>
+                                    <div class="fadein scaleInv anim_2">
+                                        <p class="carouselText3">
+                                            <i class="icon-ok"></i> {{ctrl.description2}}
+                                        </p>
+                                    </div>
+                                    <div class="fadein scaleInv anim_3">
+                                        <p class="carouselText3">
+                                            <i class="icon-ok"></i> {{ctrl.description3}}
+                                        </p>
+                                    </div>
+                                    <div class="fadein scaleInv anim_4">
+                                        <p class="carouselText3">
+                                            <i class="icon-ok"></i> {{ctrl.description4}}
+                                        </p>
+                                    </div>
+                                    <div class="fadein scaleInv anim_5">
+                                        <p class="carouselText3">
+                                            <i class="icon-ok"></i> {{ctrl.description5}}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center fadein scaleInv anim_2">
+                                    <div class="text-center">
+                                        <div class="fadein scaleInv anim_3">
+                                            <img src="~/Content/Calypso/slide1-3.png" alt="computer" class="slide1-3 animated rollIn">
+                                        </div>
+                                        <div class="fadein scaleInv anim_8">
+                                            <img src="~/Content/Calypso/slide1-1.png" alt="tablet" class="slide1-1 animated rollIn">
+                                        </div>
+                                        <div class="fadein scaleInv anim_5">
+                                            <img src="~/Content/Calypso/slide1-2.png" alt="phone" class="slide1-2 animated rollIn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 animated fadeInUp notransition">
+                                    <img src="~/Content/Calypso/desktop3.png" alt="computerDesktop" style="width:90%;">
+                                </div>
+                                <div class="col-md-6 animated fadeInDown  notransition topspace30 text-right">
+                                    <div class="car-highlight1 animated fadeInLeftBig">
+                                        {{ctrl.description11}}
+                                    </div>
+                                    <br>
+                                    <div class="car-highlight2 animated fadeInRightBig notransition">
+                                        {{ctrl.description12}}
+                                    </div>
+                                    <br>
+                                    <div class="car-highlight3 animated fadeInUpBig notransition">
+                                        {{ctrl.description13}}
+                                    </div>
+                                    <br>
+                                    <div class="car-highlight4 animated flipInX notransition">
+                                        {{ctrl.description14}}
+                                    </div>
+                                    <br>
+                                    <div class="car-highlight5 animated rollIn notransition">
+                                        {{ctrl.description15}}  <span class="font100">{{ctrl.description16}}</span><br>
+                                        <span class="font100" style="font-size:20px;">{{ctrl.description17}}</span> {{ctrl.description18}}<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item slide3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <br>
+                                    <br>
+                                    <div class="animated fadeInDownBig notransition">
+                                        <span class="car-largetext">{{ctrl.description111}}<span class="font300">&amp;</span>{{ctrl.description112}} </span><br>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="car-widecircle animated fadeInLeftBig notransition">
+                                        <span>{{ctrl.description113}}</span>
+                                    </div>
+                                    <div class="car-middlecircle animated fadeInUpBig notransition">
+                                        <span>{{ctrl.description114}}</span>
+                                    </div>
+                                    <div class="car-smallcircle animated fadeInRightBig notransition">
+                                        <span>{{ctrl.description115}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.carousel-inner -->
+                <a class="left carousel-control animated fadeInLeft" href="#c-slide" data-slide="prev"><i class="icon-angle-left"></i></a>
+                <a class="right carousel-control animated fadeInRight" href="#c-slide" data-slide="next"><i class="icon-angle-right"></i></a>
+            </section>
+            <section class="pageheader-default text-center ng-hide">
+                <div class="semitransparentbg">
+                    <h1 class="animated fadeInLeftBig notransition">{{ctrl.subTitle}}</h1>
+                    <p class="animated fadeInRightBig notransition container page-description">
+                        {{ctrl.subTitleDescription1}}<br>
+                        {{ctrl.subTitleDescription2}}
+                    </p>
+                </div>
+            </section>
+            <!-- /.carousel end-->
+            <!-- /.wrapsemibox start-->
+            <div class="wrapsemibox" ui-view>
+            </div>
+            <!-- /.wrapsemibox end-->
+        </div>
+        <!-- BEGIN FOOTER
+        ================================================== -->
+        <section>
+            <div class="footer">
+                <div class="container animated fadeInUpNow notransition">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h1 class="footerbrand">{{ctrl.domainName}}</h1>
+                            <p>
+                                {{ctrl.footerText1}}
+                            </p>
+                            <p>
+                                {{ctrl.footerText2}}
+                            </p>
+                            <p>
+                                {{ctrl.footerText3}}&nbsp;<i class="icon-windows"></i>&nbsp; {{ctrl.footerText4}}
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h1 class="title"><span class="colortext">{{ctrl.footerText5}}</span>{{ctrl.footerText6}}<span class="font100">{{ctrl.footerText4}}</span></h1>
+                            <div class="footermap">
+                                <p>
+                                    <strong>{{ctrl.footerText8}}</strong> {{ctrl.footerText9}}
+                                </p>
+                                <p>
+                                    <strong>{{ctrl.footerText10}}</strong> {{ctrl.footerText11}}
+                                </p>
+                                <p>
+                                    <strong>{{ctrl.footerText12}}</strong> {{ctrl.footerText13}}
+                                </p>
+                                <p>
+                                    <strong>{{ctrl.footerText14}}</strong> {{ctrl.footerText15}}
+                                </p>
+                                <ul class="social-icons list-soc">
+                                    <li><a target="_blank" href="https://www.facebook.com/carbajalsalinasinc/"><i class="icon-facebook"></i></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/CarbajalSalinas"><i class="icon-twitter"></i></a></li>
+                                    <li><a target="_blank" href="https://www.linkedin.com/in/josecarbajal"><i class="icon-linkedin"></i></a></li>
+                                    <li><a target="_blank" href="https://plus.google.com/116342826277857091177/posts"><i class="icon-google-plus"></i></a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/channel/UCIbizkIuDuoEwYg61-RNUow"><i class="icon-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h1 class="title"><span class="colortext">{{ctrl.footerText16}}</span>{{ctrl.footerText17}}<span class="font100">{{ctrl.footerText18}}</span></h1>
+                            <div id="quotes">
+                                <div class="textItem">
+                                    <div class="avatar">
+                                        <img src="~/Content/Calypso/avatar.jpg" alt="avatar">
+                                    </div>
+                                    {{ctrl.footerText19}}<span style="font-family:arial;">"</span><br /><b> {{ctrl.footerText20}}</b>
+                                </div>
+                                <div class="textItem">
+                                    <div class="avatar">
+                                        <img src="~/Content/Calypso/avatar.jpg" alt="avatar1">
+                                    </div>
+                                    {{ctrl.footerText21}}<span style="font-family:arial;">"</span><br /><b>{{ctrl.footerText22}}</b>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h1 class="title"><span class="colortext">{{ctrl.footerText23}}</span>{{ctrl.footerText24}} <span class="font100">{{ctrl.footerText25}}</span></h1>
+                            <div class="done">
+                                <div class="alert alert-success">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    {{ctrl.footerText26}}
+                                </div>
+                            </div>
+                            <form name="contact_form" id="contact_form" ng-model="ctrl.contactForm" novalidate="" ng-submit="ctrl.submitContact()">
+                                <div class="form">
+                                    <input class="col-md-6" type="text" ng-required="true" name="contact_name" id="contact_name" ng-model="ctrl.contactForm.contact_name" placeholder="Name">
+                                    <input class="col-md-6" type="text" ng-required="true" name="contact_email" id="contact_email" ng-model="ctrl.contactForm.contact_email" placeholder="E-mail">
+                                    <br /><textarea class="col-md-12" ng-required="true" name="contact_message" rows="7" id="contact_message" ng-model="ctrl.contactForm.contact_message" placeholder="Message"></textarea><br />
+                                    <input type="submit" id="submit" class="btn" value="Send">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="back-top">
+                <a href="#top"><span></span></a>
+            </p>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="pull-left">
+                                &copy; {{ctrl.footerText27}}
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="footermenu pull-right">
+                                <li><a ng-click="ctrl.redirect($event,'home')">{{ctrl.footerText28}}</a></li>
+                                <li><a ng-click="ctrl.redirect($event,'postSummary')">{{ctrl.footerText29}}</a></li>
+                                <li><a ng-click="ctrl.redirect($event,'contact')">{{ctrl.footerText30}}</a></li>
+                                @*<li><a href="http://carbajalsalinas.com/UIViews/Sitemap.html" target="_blank">{{ctrl.footerText31}}</a></li>*@
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /footer section end-->
+        <div class="alert alert-{{ctrl.alertType}} alertDisplay" role="alert" ng-show="ctrl.displayAlert">
+            <button class="close" type="button" ng-click="ctrl.displayAlert = false">
+                <span aria-hidden="true">x</span>
+                <span class="sr-only">Close</span>
+            </button>
+            <div>
+                <div ng-repeat="message in ctrl.messages track by $index">
+                    <div><span class="circle">&nbsp;</span>{{message}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.wrapbox ends-->
+    <!-- SCRIPTS, placed at the end of the document so the pages load faster
+    ================================================== -->
+    <script src="~/Content/Calypso/jquery.js"></script>
+    <script src="~/Content/Calypso/bootstrap.js"></script>
+    <script src="~/Content/Calypso/plugins.js"></script>
+    <script src="~/Content/Calypso/common.js"></script>
+
+
+    <!--BEGIN DEMO PANEL
+    ================================================== -->
+    <link rel="stylesheet" href="~/Content/Calypso/style-switcher.css" media="screen" />
+    <link rel="stylesheet" href="~/Content/Calypso/colorpicker.css" media="screen" />
+    <script type="text/javascript" src="~/Content/Calypso/jquery.cookie.js"></script>
+    <script type="text/javascript" src="~/Content/Calypso/styleswitch.js"></script>
+    <script type="text/javascript" src="~/Content/Calypso/colorpicker.js"></script>
+
+    <div class="demobutton">
+        <i class="icon-cogs"></i>
+    </div>
+    <div id="style-switcher">
+        <div id="switcher-header">
+            <p>
+                {{ctrl.switcher1}}
+            </p>
+        </div>
+        <div id="switcher-body">
+            <p>
+                <strong>{{ctrl.switcher2}}</strong>
+            </p>
+            <p>
+                <a href="#" class="color-box" style="width:auto;color:#888;font-weight:700;" data-rel="boxed">{{ctrl.switcher3}}</a><br />
+                <a href="#" class="color-box" data-rel="semiboxed" style="width:auto;color:#888;font-weight:700;">{{ctrl.switcher4}}</a><br />
+                <a href="#" class="color-box" data-rel="wide" style="width:auto;color:#888;font-weight:700;">{{ctrl.switcher5}}</a></br>
+            </p>
+            <p>
+                <strong>{{ctrl.switcher6}}</strong>
+            </p>
+            <div class="colors-holder">
+                <a href="#" class="color-box" data-rel="2ac4ea"></a>
+                <a href="#" class="color-box" data-rel="be9869"></a>
+                <a href="#" class="color-box" data-rel="7f8c8d"></a>
+                <a href="#" class="color-box" data-rel="1abc9c"></a>
+                <a href="#" class="color-box" data-rel="b4ad7f"></a>
+                <a href="#" class="color-box" data-rel="ff8100"></a>
+                <a href="#" class="color-box" data-rel="f54828"></a>
+                <a href="#" class="color-box" data-rel="00aaaa"></a>
+                <a href="#" class="color-box" data-rel="f0b70c"></a>
+            </div>
+        </div>
+        <div id="switcher-footer">
+            <p>
+                <a href="http://www.carbajalsalinas.com" target="_blank"><img src='~/Content/Calypso/logo.png' alt="logo"></a>
+            </p>
+        </div>
+    </div>
+    <!--END DEMO PANEL
+    ================================================== -->
+</div>

@@ -1,0 +1,37 @@
+﻿.bgImage {
+    background: url(Calypso/bg.jpg);
+}
+
+
+.slide1 {
+    background: url(Calypso/slide1.jpg);
+}
+
+.slide3 {
+    background: url(Calypso/slide3.jpg);
+}
+
+a:hover {
+    cursor: pointer !important;
+}
+
+.languageSelected {
+    color: white !important;
+    text-decoration: underline !important;
+
+}
+
+.alertDisplay {
+    position: fixed;
+    bottom: -10px;
+    right: 10px;
+    width: 300px;
+    height:80px;
+    overflow: auto;
+    border-radius: 8px;
+    z-index:1000;
+}
+
+.ng-invalid.errorBorder {
+    border: 1px solid red !important;
+}

@@ -1,0 +1,520 @@
+﻿<div class="wrapsemibox" ng-controller="HomeController as homeCtrl">
+    <div class="semiboxshadow text-center">
+        <img ng-src="./Content/Calypso/shp.png" class="img-responsive" alt="responsive">
+    </div>
+    <!-- INTRO NOTE
+    ================================================== -->
+    <section class="intro-note topspace10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>{{homeCtrl.oneText}} <span class="colortext">{{homeCtrl.netText}}</span> {{homeCtrl.developersText}}</h1>
+                    <p>
+                        {{homeCtrl.highlyText}} <br />
+                        <b>{{homeCtrl.carbajalText}}</b> {{homeCtrl.hasText}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.intro-note end-->
+    <!-- SERVICE BOXES
+    ================================================== -->
+    <section class="service-box topspace30">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center animated fadeInLeftNow notransition">
+                    <div class="icon-box-top">
+                        <i class="fontawesome-icon medium circle-white center icon-rocket"></i>
+                        <h1>{{homeCtrl.powerfulText}}</h1>
+                        <p>
+                            {{homeCtrl.imText}}
+                        </p>
+                        <p class="fontupper">
+                            <a href="#" class="readmore">{{homeCtrl.readText}} <i class="icon-double-angle-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center animated fadeInLeftNow notransition">
+                    <div class="icon-box-top">
+                        <i class="fontawesome-icon medium circle-white center icon-cogs"></i>
+                        <h1>{{homeCtrl.freshText}}</h1>
+                        <p>
+                            {{homeCtrl.usingText}}
+                        </p>
+                        <p class="fontupper">
+                            <a href="#" class="readmore">{{homeCtrl.moreText}} <i class="icon-double-angle-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center animated fadeInRightNow notransition">
+                    <div class="icon-box-top active">
+                        <i class="fontawesome-icon medium circle-white center icon-microphone"></i>
+                        <h1>{{homeCtrl.cleanText}}</h1>
+                        <p>
+                            {{homeCtrl.withText}}
+                        </p>
+                        <p class="fontupper">
+                            <a href="#" class="readmore">{{homeCtrl.readText}} <i class="icon-double-angle-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center animated fadeInRightNow notransition">
+                    <div class="icon-box-top">
+                        <i class="fontawesome-icon medium circle-white center icon-trophy"></i>
+                        <h1>{{homeCtrl.doText}}</h1>
+                        <p>
+                            {{homeCtrl.theText}}
+                        </p>
+                        <p class="fontupper">
+                            <a href="#" class="readmore">{{homeCtrl.readText}}<i class="icon-double-angle-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.service-box end-->
+    <!-- RECENT WORK
+    ================================================== -->
+    <section class="home-portfolio bgarea topspace30">
+        <div class="bgarea-semitransparent">
+            <div class="container">
+                <h1 class="small text-center animated fadeInLeftNow notransition">{{homeCtrl.featuredText}}</h1>
+                <p class="animated fadeInRightNow notransition text-center topspace20">
+                    {{homeCtrl.salinasText}}
+                </p>
+                <br />
+                <div class="row">
+                    <div class="col-md-6 animated fadeInLeftNow notransition">
+                        <div class="carousel carousel-fade slide carousel-featuredwork" id="carousel-featuredwork">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-featuredwork" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-featuredwork" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel-featuredwork" data-slide-to="2" class=""></li>
+                            </ol>
+                            <div class="carousel-inner" style="margin-top:-20px;">
+                                <div class="item active">
+                                    <img ng-src="./Content/Calypso/desktop3.png" alt="desktop3">
+                                </div>
+                                <div class="item">
+                                    <img ng-src="./Content/Calypso/slide1-1.png" alt="slide1">
+                                </div>
+                                <div class="item">
+                                    <img ng-src="./Content/Calypso/desktop2.png" alt="desktop2">
+                                </div>
+                            </div>
+                            <!-- /.carousel-inner -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 animated fadeInRightNow notransition">
+                        <ul class="icons">
+                            <li>
+                                <h4><i class="icon-magic"></i>{{homeCtrl.magicText}}</h4>
+                                <p>
+                                    {{homeCtrl.stronglyText}}
+                                </p>
+                            </li>
+                            <li>
+                                <h4><i class="icon-heart"></i>{{homeCtrl.passionText}}</h4>
+                                <p>
+                                    {{homeCtrl.iText}}
+                                </p>
+                            </li>
+                            <li>
+                                <h4><i class="icon-twitter"></i>{{homeCtrl.topText}}</h4>
+                                <p>
+                                    {{homeCtrl.inText}}
+                                </p>
+                            </li>
+                            <li>
+                                <h4><i class="icon-leaf"></i>{{homeCtrl.professionalText}}</h4>
+                                <p>
+                                    {{homeCtrl.usingText}}
+                                </p>
+                            </li>
+                            <li>
+                                <h4><i class="icon-cog"></i>{{homeCtrl.bestText}}</h4>
+                                <p>
+                                    {{homeCtrl.amText}}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.recent-work end-->
+    <!-- FEATURES
+    ================================================== -->
+    <section class="home-features topspace30">
+        <div class="container animated fadeInUpNow notransition">
+            <h1 class="small text-center">{{homeCtrl.whatText}}</h1>
+            <div class="br-hr type_short">
+                <span class="br-hr-h">
+                    <i class="icon-pencil"></i>
+                </span>
+            </div>
+            <div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img ng-src="./Content/Calypso/avatar.jpg" alt="avatar2">
+                    <blockquote>
+                        <p class="bigquote">
+                            <i class="icon-quote-left colortext quoteicon"></i>{{homeCtrl.joseText}}
+                        </p>
+                        <footer>{{homeCtrl.philippText}} <a href="#">{{homeCtrl.bmwText}}</a></footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img ng-src="./Content/Calypso/avatar.jpg" alt="avatar3">
+                    <blockquote>
+                        <p class="bigquote">
+                            <i class="icon-quote-left colortext quoteicon"></i> {{homeCtrl.heText}}
+                        </p>
+                        <footer>{{homeCtrl.raviText}} <a href="#">{{homeCtrl.infosysText}}</a></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <br />
+            <div class="col-md-10 col-md-offset-1 animated slidea notransition">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>
+                            <i class="icon icon-microphone">
+                            </i> {{homeCtrl.aText}}
+                        </h4>
+                        <div class="bottomspace30">
+                            {{homeCtrl.letText}}
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>
+                            <i class="icon icon-anchor">
+                            </i>{{homeCtrl.greatText}}
+                        </h4>
+                        <div class="bottomspace30">
+                            {{homeCtrl.toText}}
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>
+                            <i class="icon icon-user">
+                            </i> {{homeCtrl.readyText}}
+                        </h4>
+                        {{homeCtrl.neverText}} <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>
+                            <i class="icon icon-pushpin">
+                            </i> {{homeCtrl.newText}}
+                        </h4>
+                        {{homeCtrl.beText}} <br>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>
+                            <i class="icon icon-cogs">
+                            </i> {{homeCtrl.supportText}}
+                        </h4>
+                        {{homeCtrl.youText}}<br>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>
+                            <i class="icon icon-leaf">
+                            </i> {{homeCtrl.awesomeText}}
+                        </h4>
+                        <div class="bottomspace30">
+                            {{homeCtrl.nowText}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.home-features end-->
+    <section class="grayarea recent-projects-home topspace30 animated fadeInUpNow notransition">
+        <div class="container">
+            <div class="row">
+                <h1 class="small text-center topspace0">{{homeCtrl.latestText}}</h1>
+                <p class="animated fadeInRightNow notransition text-center topspace20">
+                    {{homeCtrl.withText}}
+                </p>
+                <div class="text-center smalltitle">
+                </div>
+                <div class="col-md-12">
+                    <div class="list_carousel text-center">
+                        <div class="carousel_nav">
+                            <a class="prev" id="car_prev" href="#"><span>prev</span></a>
+                            <a class="next" id="car_next" href="#"><span>next</span></a>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                        <ul id="carousel-projects">
+                            <!--featured-projects 1-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase1.jpg" alt="showcase1">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase1.jpg" title="BMW"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">BMW</a></h1>
+                                    <p>
+                                        {{homeCtrl.spareText}}
+                                    </p>
+                                </div>
+                            </li>
+                            <!--featured-projects 2-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase2.jpg" alt="showcase2">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase2.jpg" title="P&G"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">P&G</a></h1>
+                                    <p>
+                                        {{homeCtrl.palletizingText}}
+                                    </p>
+                                </div>
+                            </li>
+                            <!--featured-projects 3-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase3.jpg" alt="showcase3">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase3.jpg" title="Walmart"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">{{homeCtrl.walmartText}}</a></h1>
+                                    <p>
+                                        {{homeCtrl.clusterText}}
+                                    </p>
+                                </div>
+                            </li>
+                            <!--featured-projects 4-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase4.jpg" alt="showcase4">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase4.jpg" title="Infosys"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">{{homeCtrl.infosysText}}</a></h1>
+                                    <p>
+                                        {{homeCtrl.seniorText}}
+                                    </p>
+                                </div>
+                            </li>
+                            <!--featured-projects 5-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase5.jpg" alt="showcase5">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase5.jpg" title="Shympony Health"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">{{homeCtrl.shymponyText}}</a></h1>
+                                    <p>
+                                        {{homeCtrl.reportingText}}
+                                    </p>
+                                </div>
+                            </li>
+                            <!--featured-projects 6-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase6.jpg" alt="showcase6">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase6.jpg" title="Thomson Reuters"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">{{homeCtrl.thomsonText}}</a></h1>
+                                    <p>
+                                        {{homeCtrl.netText}}
+                                    </p>
+                                </div>
+                            </li>
+                            <!--featured-projects 7-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase7.jpg" alt="showcase7">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase7.jpg" title="WestLaw Next"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">{{homeCtrl.westlawText}}</a></h1>
+                                    <p>
+                                        {{homeCtrl.frontText}}
+                                    </p>
+                                </div>
+                            </li>
+                            <!--featured-projects 8-->
+                            <li>
+                                <div class="boxcontainer">
+                                    <img ng-src="./Content/Calypso/showcase8.jpg" alt="showcase8">
+                                    <div class="roll">
+                                        <div class="wrapcaption">
+                                            <a href="#"><i class="icon-link captionicons"></i></a>
+                                            <a data-gal="prettyPhoto[gallery1]" ng-href="./Content/Calypso/showcase8.jpg" title="Councurse"><i class="icon-zoom-in captionicons"></i></a>
+                                        </div>
+                                    </div>
+                                    <h1><a href="#">{{homeCtrl.councurseText}}</a></h1>
+                                    <p>
+                                        {{homeCtrl.andText}}
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.recent-projects-home end-->
+    <!-- BEGIN CALL TO ACTION PANEL
+    ================================================== -->
+    <section class="container animated fadeInDownNow notransition topspace40">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <p class="bigtext">
+                        {{homeCtrl.visitText}} <span class="fontpacifico colortext">{{homeCtrl.carbajalText}}</span> {{homeCtrl.anyText}}
+                    </p>
+                    <p>
+                        {{homeCtrl.takeText}}
+                    </p>
+                </div>
+                <div class="text-center topspace20">
+                    <a href="#" class="buttonblack"><i class="icon-shopping-cart"></i>{{homeCtrl.buyText}}</a>
+                    <a href="#" class="buttoncolor"><i class="icon-link"></i>{{homeCtrl.learnText}}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /. end call to action-->
+
+    <script>
+        /* ---------------------------------------------------------------------- */
+        /*	Carousel
+        /* ---------------------------------------------------------------------- */
+        $(document).ready(function () {
+            $('#carousel-projects').carouFredSel({
+                responsive: true,
+                items: {
+                    width: 200,
+                    height: 295,
+                    visible: {
+                        min: 1,
+                        max: 4
+                    }
+                },
+                width: '200px',
+                height: '295px',
+                auto: true,
+                circular: true,
+                infinite: false,
+                prev: {
+                    button: "#car_prev",
+                    key: "left",
+                },
+                next: {
+                    button: "#car_next",
+                    key: "right",
+                },
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                },
+                scroll: {
+                    easing: "",
+                    duration: 1200
+                }
+            });
+        });
+    </script>
+    <script>
+        //CALL TESTIMONIAL ROTATOR
+        $(function () {
+            /*
+            - how to call the plugin:
+            $( selector ).cbpQTRotator( [options] );
+            - options:
+            {
+                // default transition speed (ms)
+                speed : 700,
+                // default transition easing
+                easing : 'ease',
+                // rotator interval (ms)
+                interval : 8000
+            }
+            - destroy:
+            $( selector ).cbpQTRotator( 'destroy' );
+            */
+            $('#cbp-qtrotator').cbpQTRotator();
+        });
+    </script>
+    <script>
+        //CALL PRETTY PHOTO
+        $(document).ready(function () {
+            $("a[data-gal^='prettyPhoto']").prettyPhoto({ social_tools: '', animation_speed: 'normal', theme: 'dark_rounded' });
+        });
+    </script>
+    <script>
+        //MASONRY
+        $(document).ready(function () {
+            var $container = $('#content');
+            $container.imagesLoaded(function () {
+                $container.isotope({
+                    filter: '*',
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false,
+                    }
+                });
+            });
+            $('#filter a').click(function (event) {
+                $('a.selected').removeClass('selected');
+                var $this = $(this);
+                $this.addClass('selected');
+                var selector = $this.attr('data-filter');
+                $container.isotope({
+                    filter: selector
+                });
+                return false;
+            });
+        });
+    </script>
+    <script>
+        //ROLL ON HOVER
+        $(function () {
+            $(".roll").css("opacity", "0");
+            $(".roll").hover(function () {
+                $(this).stop().animate({
+                    opacity: .8
+                }, "slow");
+            },
+            function () {
+                $(this).stop().animate({
+                    opacity: 0
+                }, "slow");
+            });
+        });
+    </script>
+</div>
